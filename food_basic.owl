@@ -1,0 +1,609 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="wine_3.rdf"
+         xmlns="wine_3.rdf#">
+
+<owl:Ontology rdf:about="wine_3.rdf"/>
+
+<owl:ObjectProperty rdf:about="#original_from">
+  <rdfs:domain rdf:resource="#Food"/>
+  <rdfs:range rdf:resource="#Country"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_taste">
+  <rdfs:domain rdf:resource="#Food"/>
+  <rdfs:range rdf:resource="#Taste"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_child_food">
+  <rdfs:domain rdf:resource="#Food"/>
+  <rdfs:range rdf:resource="#Food"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_color">
+  <rdfs:domain rdf:resource="#Food"/>
+  <rdfs:range rdf:resource="#Color"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_nutrition">
+  <rdfs:domain rdf:resource="#Food"/>
+  <rdfs:range rdf:resource="#Nutrition"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_function">
+  <rdfs:domain rdf:resource="#Tool"/>
+  <rdfs:range rdf:resource="#Function"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_shape">
+  <rdfs:domain rdf:resource="#Tool"/>
+  <rdfs:range rdf:resource="#Shape"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_sub_function">
+  <rdfs:domain rdf:resource="#Tool"/>
+  <rdfs:range rdf:resource="#Tool"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Food">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Vegetable">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Fruit">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Meat">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Fish">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Grain">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Dairy">
+  <rdfs:subClassOf rdf:resource="#Food"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tool">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Kitchenware">
+  <rdfs:subClassOf rdf:resource="#Tool"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Tableware">
+  <rdfs:subClassOf rdf:resource="#Tool"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Taste">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Country">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Color">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nutrition">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Function">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Shape">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#juicy">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#sweet">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#sour">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bitter">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#salty">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#spicy">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fruity">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#grassy">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#woody">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pungent">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#meaty">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fishy">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tangy">
+  <rdf:type rdf:resource="#Taste"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#australia">
+  <rdf:type rdf:resource="#Country"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#new_zealand">
+  <rdf:type rdf:resource="#Country"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#china">
+  <rdf:type rdf:resource="#Country"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#canada">
+  <rdf:type rdf:resource="#Country"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mexica">
+  <rdf:type rdf:resource="#Country"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#america">
+  <rdf:type rdf:resource="#Country"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#europe">
+  <rdf:type rdf:resource="#Country"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#asia">
+  <rdf:type rdf:resource="#Country"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#egypt">
+  <rdf:type rdf:resource="#Country"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#india">
+  <rdf:type rdf:resource="#Country"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#green">
+  <rdf:type rdf:resource="#Color"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#red">
+  <rdf:type rdf:resource="#Color"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#yellow">
+  <rdf:type rdf:resource="#Color"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#white">
+  <rdf:type rdf:resource="#Color"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#purple">
+  <rdf:type rdf:resource="#Color"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#protein">
+  <rdf:type rdf:resource="#Nutrition"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fat">
+  <rdf:type rdf:resource="#Nutrition"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fry">
+  <rdf:type rdf:resource="#Function"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#boil">
+  <rdf:type rdf:resource="#Function"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#drinking">
+  <rdf:type rdf:resource="#Function"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#poking">
+  <rdf:type rdf:resource="#Function"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#stabbing">
+  <rdf:type rdf:resource="#Function"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cutting">
+  <rdf:type rdf:resource="#Function"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#servefood">
+  <rdf:type rdf:resource="#Function"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#long">
+  <rdf:type rdf:resource="#Shape"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#round">
+  <rdf:type rdf:resource="#Shape"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#circular">
+  <rdf:type rdf:resource="#Shape"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#solid">
+  <rdf:type rdf:resource="#Shape"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#liquid">
+  <rdf:type rdf:resource="#Shape"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tomato">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_shape rdf:resource="#round"/>
+  <has_color rdf:resource="#red"/>
+  <has_taste rdf:resource="#juicy"/>
+  <has_taste rdf:resource="#sweet"/>
+  <original_from rdf:resource="#america"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#broccoli">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_color rdf:resource="#green"/>
+  <has_taste rdf:resource="#juicy"/>
+  <has_taste rdf:resource="#sweet"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chilli">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_taste rdf:resource="#spicy"/>
+  <has_color rdf:resource="#green"/>
+  <has_color rdf:resource="#red"/>
+  <has_color rdf:resource="#yellow"/>
+  <original_from rdf:resource="#america"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#carrot">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_shape rdf:resource="#long"/>
+  <has_color rdf:resource="#yellow"/>
+  <has_taste rdf:resource="#woody"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#capsicum">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_taste rdf:resource="#spicy"/>
+  <has_color rdf:resource="#green"/>
+  <has_color rdf:resource="#red"/>
+  <has_color rdf:resource="#yellow"/>
+  <original_from rdf:resource="#america"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cucumber">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_shape rdf:resource="#long"/>
+  <has_color rdf:resource="#green"/>
+  <has_taste rdf:resource="#juicy"/>
+  <original_from rdf:resource="#india"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cabbage">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_taste rdf:resource="#sweet"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#garlic">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_color rdf:resource="#white"/>
+  <has_taste rdf:resource="#pungent"/>
+  <original_from rdf:resource="#asia"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lettuce">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_shape rdf:resource="#round"/>
+  <has_color rdf:resource="#green"/>
+  <original_from rdf:resource="#egypt"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#mushroom">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_color rdf:resource="#white"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#onion">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_shape rdf:resource="#round"/>
+  <has_color rdf:resource="#yellow"/>
+  <has_color rdf:resource="#purple"/>
+  <has_taste rdf:resource="#pungent"/>
+  <original_from rdf:resource="#australia"/>
+  <original_from rdf:resource="#new_zealand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#potato">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_taste rdf:resource="#sweet"/>
+  <original_from rdf:resource="#america"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pumpkin">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_taste rdf:resource="#sweet"/>
+  <has_color rdf:resource="#yellow"/>
+  <original_from rdf:resource="#mexica"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#eggplant">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_shape rdf:resource="#long"/>
+  <has_color rdf:resource="#purple"/>
+  <has_taste rdf:resource="#sweet"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pepper">
+  <rdf:type rdf:resource="#Vegetable"/>
+  <has_color rdf:resource="#green"/>
+  <has_color rdf:resource="#red"/>
+  <has_color rdf:resource="#yellow"/>
+  <has_taste rdf:resource="#spicy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#orange">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_color rdf:resource="#yellow"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#apple">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_color rdf:resource="#green"/>
+  <has_color rdf:resource="#red"/>
+  <original_from rdf:resource="#america"/>
+  <has_child_food rdf:resource="#green_apple"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#banana">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_shape rdf:resource="#long"/>
+  <has_color rdf:resource="#yellow"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lemon">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_color rdf:resource="#yellow"/>
+  <has_taste rdf:resource="#sweet"/>
+  <has_taste rdf:resource="#sour"/>
+  <has_taste rdf:resource="#juicy"/>
+  <original_from rdf:resource="#china"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#plum">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_color rdf:resource="#purple"/>
+  <has_taste rdf:resource="#sweet"/>
+  <has_taste rdf:resource="#sour"/>
+  <has_taste rdf:resource="#juicy"/>
+  <original_from rdf:resource="#china"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lime">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_color rdf:resource="#green"/>
+  <has_taste rdf:resource="#sweet"/>
+  <has_taste rdf:resource="#sour"/>
+  <has_taste rdf:resource="#juicy"/>
+  <original_from rdf:resource="#china"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#kiwifruit">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_shape rdf:resource="#round"/>
+  <has_color rdf:resource="#green"/>
+  <original_from rdf:resource="#new_zealand"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#avocado">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_shape rdf:resource="#round"/>
+  <has_color rdf:resource="#green"/>
+  <has_taste rdf:resource="#grassy"/>
+  <original_from rdf:resource="#america"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pear">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_shape rdf:resource="#round"/>
+  <has_color rdf:resource="#green"/>
+  <has_color rdf:resource="#yellow"/>
+  <has_taste rdf:resource="#juicy"/>
+  <has_taste rdf:resource="#sweet"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#green_apple">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_color rdf:resource="#green"/>
+  <has_taste rdf:resource="#sweet"/>
+  <original_from rdf:resource="#america"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#red_apple">
+  <rdf:type rdf:resource="#Fruit"/>
+  <has_color rdf:resource="#red"/>
+  <has_taste rdf:resource="#sweet"/>
+  <original_from rdf:resource="#america"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#beaf">
+  <rdf:type rdf:resource="#Meat"/>
+  <has_taste rdf:resource="#meaty"/>
+  <has_color rdf:resource="#red"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chicken">
+  <rdf:type rdf:resource="#Meat"/>
+  <has_taste rdf:resource="#meaty"/>
+  <has_color rdf:resource="#white"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#lamb">
+  <rdf:type rdf:resource="#Meat"/>
+  <has_taste rdf:resource="#meaty"/>
+  <has_color rdf:resource="#red"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pork">
+  <rdf:type rdf:resource="#Meat"/>
+  <has_taste rdf:resource="#meaty"/>
+  <has_color rdf:resource="#red"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#salmon">
+  <rdf:type rdf:resource="#Fish"/>
+  <has_taste rdf:resource="#fishy"/>
+  <has_nutrition rdf:resource="#fat"/>
+  <has_nutrition rdf:resource="#protein"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#shrimp">
+  <rdf:type rdf:resource="#Fish"/>
+  <has_taste rdf:resource="#fishy"/>
+  <has_nutrition rdf:resource="#protein"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#egg">
+  <rdf:type rdf:resource="#Dairy"/>
+  <has_nutrition rdf:resource="#protein"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#yoghurt">
+  <rdf:type rdf:resource="#Dairy"/>
+  <has_taste rdf:resource="#sweet"/>
+  <has_nutrition rdf:resource="#protein"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#cheese">
+  <rdf:type rdf:resource="#Dairy"/>
+  <has_nutrition rdf:resource="#protein"/>
+  <has_nutrition rdf:resource="#fat"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#milk">
+  <rdf:type rdf:resource="#Dairy"/>
+  <has_nutrition rdf:resource="#protein"/>
+  <has_nutrition rdf:resource="#fat"/>
+  <has_taste rdf:resource="#sweet"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rice">
+  <rdf:type rdf:resource="#Grain"/>
+  <has_shape rdf:resource="#round"/>
+  <has_shape rdf:resource="#long"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#noodle">
+  <rdf:type rdf:resource="#Grain"/>
+  <has_shape rdf:resource="#long"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pasta">
+  <rdf:type rdf:resource="#Grain"/>
+  <has_shape rdf:resource="#round"/>
+  <has_shape rdf:resource="#long"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#bread">
+  <rdf:type rdf:resource="#Grain"/>
+  <has_shape rdf:resource="#long"/>
+  <has_taste rdf:resource="#tangy"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#corn">
+  <rdf:type rdf:resource="#Grain"/>
+  <has_color rdf:resource="#yellow"/>
+  <original_from rdf:resource="#america"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pan">
+  <rdf:type rdf:resource="#Kitchenware"/>
+  <has_function rdf:resource="#fry"/>
+  <has_color rdf:resource="#red"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#pot">
+  <rdf:type rdf:resource="#Kitchenware"/>
+  <has_function rdf:resource="#boil"/>
+  <has_color rdf:resource="#red"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#chopping_board">
+  <rdf:type rdf:resource="#Kitchenware"/>
+  <has_function rdf:resource="#cutting"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#spoon">
+  <rdf:type rdf:resource="#Tableware"/>
+  <has_function rdf:resource="#drinking"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fork">
+  <rdf:type rdf:resource="#Tableware"/>
+  <has_function rdf:resource="#poking"/>
+  <has_function rdf:resource="#stabbing"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#knife">
+  <rdf:type rdf:resource="#Tableware"/>
+  <has_function rdf:resource="#cutting"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#plate">
+  <rdf:type rdf:resource="#Tableware"/>
+  <has_function rdf:resource="#servefood"/>
+  <has_shape rdf:resource="#circular"/>
+  <has_sub_function rdf:resource="#chopping_board"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>
