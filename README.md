@@ -6,6 +6,12 @@
 jupyter nbconvert --to script simple_QA_generation.ipynb
 ```
 
+## Convert .py to ipynb
+pip install p2j
+```bash
+p2j myscript.py
+```
+
 ---
 
 ## `simple_QA_generation_classes.py`
