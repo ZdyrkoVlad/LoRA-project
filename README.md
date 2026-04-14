@@ -1,13 +1,64 @@
-/// convert to python file
+# LoRA Project — OWL Ontology QA Generation
+
+## Convert notebook to Python script
 
 ```bash
 jupyter nbconvert --to script simple_QA_generation.ipynb
 ```
+
+---
+
+## `simple_QA_generation_classes.py`
+
+Generates question-answer pairs from OWL ontologies.  
+Automatically detects two modes:
+
+| Mode | Description |
+|------|-------------|
+| **Standard** | Ontology has true named individuals (e.g. `food_basic.owl`) |
+| **OWL Full** | Classes act as individuals via punning (e.g. `wine_3.rdf`) |
+
+### Usage
+
+```bash
+# Default — loads food_basic.owl
+python simple_QA_generation_classes.py
+
+# Load any OWL/RDF ontology by passing the filename as an argument
+python simple_QA_generation_classes.py food_basic.owl
+python simple_QA_generation_classes.py wine_3.rdf
+python simple_QA_generation_classes.py my_ontology.owl
+```
+
+### Output files
+
+Output files are named after the ontology (without extension) and saved in the current working directory:
+
+| File | Description |
+|------|-------------|
+| `qa_dataset_<name>.csv` | Full Q&A dataset with `question` and `answer` columns |
+| `questions_<name>.txt` | One question per line |
+| `answers_<name>.txt` | One answer per line (comma-separated if multiple) |
+
+**Examples:**
+
+| Ontology argument | Output files |
+|---|---|
+| `food_basic.owl` | `qa_dataset_food_basic.csv`, `questions_food_basic.txt`, `answers_food_basic.txt` |
+| `wine_3.rdf` | `qa_dataset_wine_3.csv`, `questions_wine_3.txt`, `answers_wine_3.txt` |
+
+### Requirements
+
+```bash
+pip install owlready2 pandas rdflib SPARQLWrapper numpy
+```
+
+---
+
+## Legacy script output
+
 ```bash
 python simple_QA_generation.py
 ```
 
-
-/// python script output
-
-qa_dataset.csv
+Output: `qa_dataset.csv`
