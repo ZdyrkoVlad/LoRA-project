@@ -34,6 +34,12 @@ python simple_QA_generation_classes.py
 python simple_QA_generation_classes.py food_basic.owl
 python simple_QA_generation_classes.py wine_3.rdf
 python simple_QA_generation_classes.py my_ontology.owl
+
+
+
+#Generate complex question and answer max 4 logic combination
+
+python complex_logic_QA_generation_classes.py food_basic.owl 1000 4
 ```
 
 ### Output files
