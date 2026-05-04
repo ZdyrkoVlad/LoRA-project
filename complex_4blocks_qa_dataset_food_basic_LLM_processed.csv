@@ -1,0 +1,11 @@
+question,answer
+"What vegetable is from America, tastes woody, is yellow, and is not from New Zealand?",
+"What fruit is green or not sour, tastes juicy, and is not yellow?",lime
+"What kitchenware does not boil, fries, or is red, and is not for cutting?","pan, pot"
+"What tableware doesn't stab, is used for drinking, isn't for cutting, and isn't round?",spoon
+"What fruit is round or not red, is a green apple or not green?","avocado, banana, green_apple, kiwifruit, lemon, lime, orange, pear, plum, red_apple"
+"What grain is long, tangy, or from America, and isn't round?","bread, corn, noodle"
+"What grain isn't round or long, is yellow, or from America?",corn
+"What kitchenware cuts, isn't red, and doesn't boil or fry?",chopping_board
+"What tableware cuts, drinks, isn't round, or is a chopping board?","fork, knife, plate, spoon"
+"What tableware doesn't stab or have a chopping board, drinks, or isn't round?","fork, knife, spoon"

@@ -1,0 +1,11 @@
+question,answer
+What Fruit has_color yellow and original_from new_zealand and has_child_food green_apple,
+What Kitchenware has_color red and has_function cutting or has_function boil,pot
+What Fish has_nutrition fat or not has_nutrition protein and not has_taste fishy,
+What Fish not has_nutrition fat or has_taste fishy or not has_nutrition protein,"salmon, shrimp"
+What Vegetable not original_from egypt or original_from new_zealand and not has_taste juicy,"cabbage, capsicum, carrot, chilli, eggplant, garlic, mushroom, onion, pepper, potato, pumpkin"
+What Fruit not has_color yellow and has_color purple or original_from america,"apple, avocado, green_apple, plum, red_apple"
+What Dairy not has_taste sweet or not has_nutrition fat and has_nutrition protein,"cheese, egg, yoghurt"
+What Meat not has_color white and not has_color red or not has_taste meaty,
+What Vegetable not has_taste spicy and not original_from america or original_from india,"broccoli, cabbage, carrot, cucumber, eggplant, garlic, lettuce, mushroom, onion, pumpkin"
+What Fish not has_nutrition protein and has_nutrition fat and not has_taste fishy,

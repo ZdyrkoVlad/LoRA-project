@@ -1,59 +1,59 @@
 question,answer
-What Vegetable has_shape round,"['tomato', 'lettuce', 'onion']"
+What Vegetable original_from america,"['tomato', 'chilli', 'capsicum', 'potato']"
 What Vegetable has_taste juicy,"['tomato', 'broccoli', 'cucumber']"
 What Vegetable has_taste sweet,"['tomato', 'broccoli', 'cabbage', 'potato', 'pumpkin', 'eggplant']"
 What Vegetable has_color red,"['tomato', 'chilli', 'capsicum', 'pepper']"
-What Vegetable original_from america,"['tomato', 'chilli', 'capsicum', 'potato']"
+What Vegetable has_shape round,"['tomato', 'lettuce', 'onion']"
 What Vegetable has_color green,"['broccoli', 'chilli', 'capsicum', 'cucumber', 'lettuce', 'pepper']"
 What Vegetable has_taste spicy,"['chilli', 'capsicum', 'pepper']"
 What Vegetable has_color yellow,"['chilli', 'carrot', 'capsicum', 'onion', 'pumpkin', 'pepper']"
-What Vegetable has_shape long,"['carrot', 'cucumber', 'eggplant']"
 What Vegetable has_taste woody,['carrot']
+What Vegetable has_shape long,"['carrot', 'cucumber', 'eggplant']"
 What Vegetable original_from india,['cucumber']
+What Vegetable original_from asia,['garlic']
 What Vegetable has_taste pungent,"['garlic', 'onion']"
 What Vegetable has_color white,"['garlic', 'mushroom']"
-What Vegetable original_from asia,['garlic']
 What Vegetable original_from egypt,['lettuce']
-What Vegetable has_color purple,"['onion', 'eggplant']"
 What Vegetable original_from australia,['onion']
 What Vegetable original_from new_zealand,['onion']
+What Vegetable has_color purple,"['onion', 'eggplant']"
 What Vegetable original_from mexica,['pumpkin']
 What Fruit has_color yellow,"['orange', 'banana', 'lemon', 'pear']"
-What Fruit has_color green,"['apple', 'green_apple', 'lime', 'kiwifruit', 'avocado', 'pear']"
-What Fruit has_color red,"['apple', 'red_apple']"
 What Fruit has_child_food green_apple,['apple']
 What Fruit original_from america,"['apple', 'green_apple', 'avocado', 'red_apple']"
+What Fruit has_color green,"['apple', 'green_apple', 'lime', 'kiwifruit', 'avocado', 'pear']"
+What Fruit has_color red,"['apple', 'red_apple']"
 What Fruit has_taste sweet,"['green_apple', 'lemon', 'plum', 'lime', 'pear', 'red_apple']"
 What Fruit has_shape long,['banana']
+What Fruit original_from china,"['lemon', 'plum', 'lime']"
 What Fruit has_taste sour,"['lemon', 'plum', 'lime']"
 What Fruit has_taste juicy,"['lemon', 'plum', 'lime', 'pear']"
-What Fruit original_from china,"['lemon', 'plum', 'lime']"
 What Fruit has_color purple,['plum']
-What Fruit has_shape round,"['kiwifruit', 'avocado', 'pear']"
 What Fruit original_from new_zealand,['kiwifruit']
+What Fruit has_shape round,"['kiwifruit', 'avocado', 'pear']"
 What Fruit has_taste grassy,['avocado']
-What Meat has_taste meaty,"['beaf', 'chicken', 'lamb', 'pork']"
 What Meat has_color red,"['beaf', 'lamb', 'pork']"
+What Meat has_taste meaty,"['beaf', 'chicken', 'lamb', 'pork']"
 What Meat has_color white,['chicken']
+What Fish has_taste fishy,"['salmon', 'shrimp']"
 What Fish has_nutrition fat,['salmon']
 What Fish has_nutrition protein,"['salmon', 'shrimp']"
-What Fish has_taste fishy,"['salmon', 'shrimp']"
 What Dairy has_nutrition protein,"['egg', 'yoghurt', 'cheese', 'milk']"
 What Dairy has_taste sweet,"['yoghurt', 'milk']"
 What Dairy has_nutrition fat,"['cheese', 'milk']"
 What Grain has_shape round,"['rice', 'pasta']"
 What Grain has_shape long,"['rice', 'noodle', 'pasta', 'bread']"
 What Grain has_taste tangy,['bread']
-What Grain has_color yellow,['corn']
 What Grain original_from america,['corn']
-What Kitchenware has_function fry,['pan']
+What Grain has_color yellow,['corn']
 What Kitchenware has_color red,"['pan', 'pot']"
+What Kitchenware has_function fry,['pan']
 What Kitchenware has_function boil,['pot']
 What Kitchenware has_function cutting,['chopping_board']
 What Tableware has_function drinking,['spoon']
 What Tableware has_function poking,['fork']
 What Tableware has_function stabbing,['fork']
 What Tableware has_function cutting,['knife']
-What Tableware has_function servefood,['plate']
-What Tableware has_shape circular,['plate']
 What Tableware has_sub_function chopping_board,['plate']
+What Tableware has_shape circular,['plate']
+What Tableware has_function servefood,['plate']

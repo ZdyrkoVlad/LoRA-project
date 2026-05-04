@@ -74,3 +74,30 @@ python simple_QA_generation.py
 ```
 
 Output: `qa_dataset.csv`
+
+---
+
+## `LLM_integration.py`
+
+Connects to a local LLM (e.g., via LM Studio or Ollama using an OpenAI-compatible API) to convert raw, logical questions into natural language.
+
+### Features:
+- **Inputs:** Accepts either a `.txt` file (one question per line) or a `.csv` file (must contain a `question` column).
+- **Processing:** Prompts the local LLM to rewrite logical strings (e.g. `What Vegetable has_taste woody`) into normal human-readable English.
+- **Outputs:** If a `.csv` is provided, it safely replaces ONLY the `question` column with the LLM's output and saves a new copy of the dataset.
+
+### Usage
+
+Run the script by passing the target file as an argument:
+
+```bash
+# Process a CSV file
+python LLM_integration.py qa_dataset_food_basic.csv
+
+# Process a TXT file
+python LLM_integration.py questions_food_basic.txt
+```
+
+**Outputs:**
+When you pass a CSV, a new file will be automatically generated with the `_LLM_processed` suffix:
+`qa_dataset_food_basic_LLM_processed.csv`

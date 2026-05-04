@@ -1,0 +1,11 @@
+question,answer
+What Vegetable original_from america and has_taste woody and has_color yellow and not original_from new_zealand,
+What Fruit has_color green or not has_taste sour and has_taste juicy and not has_color yellow,lime
+What Kitchenware not has_function boil and has_function fry or has_color red or not has_function cutting,"pan, pot"
+What Tableware not has_function stabbing and has_function drinking and not has_function cutting and not has_shape circular,spoon
+What Fruit has_shape round or not has_color red and not has_child_food green_apple or not has_color green,"avocado, banana, green_apple, kiwifruit, lemon, lime, orange, pear, plum, red_apple"
+What Grain has_shape long or has_taste tangy or original_from america and not has_shape round,"bread, corn, noodle"
+What Grain not has_shape round or not has_shape long and has_color yellow or original_from america,corn
+What Kitchenware has_function cutting or not has_color red and not has_function fry and not has_function boil,chopping_board
+What Tableware has_function cutting or has_function drinking or not has_shape circular or has_sub_function chopping_board,"fork, knife, plate, spoon"
+What Tableware not has_function stabbing or not has_sub_function chopping_board and has_function drinking or not has_shape circular,"fork, knife, spoon"
