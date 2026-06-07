@@ -1,0 +1,11 @@
+,fname,question,answer,prompt,negative_prompt,rejected_answers
+0,images/0.jpg,What Fruit has_shape round,pear,"A kitchen scene with: pear, leek, pan, onion, salmon, lettuce, pot",,"['kiwifruit', 'avocado']"
+1,images/1.jpg,What Fruit has_shape long,banana,"A kitchen scene with: pan, egg, mandarin, banana, leek, pot, avocado",,[]
+2,images/2.jpg,What Fruit has_taste sour,lemon,"A kitchen scene with: mushroom, pumpkin, green_onion, pineapple, lemon, pot, pan",,"['lime', 'plum']"
+3,images/3.jpg,What Fruit has_color yellow,pear,"A kitchen scene with: lemon, pan, pear, tomato, rice, pineapple, pot",,"['orange', 'banana', 'lemon']"
+4,images/4.jpg,What Kitchenware has_color red,pot,"A kitchen scene with: pan, pineapple, cheese, pepper, pot, squid, pot",,['pan']
+5,images/5.jpg,What Vegetable has_taste juicy,tomato,"A kitchen scene with: tomato, bean, pan, chopping_board, lemon, carrot, asparagus",,"['broccoli', 'cucumber']"
+6,images/6.jpg,What Fruit has_color green,green_apple,"A kitchen scene with: pan, green_apple, eggplant, ginger, pasta, grape, pot",,"['lime', 'pear', 'avocado', 'apple', 'kiwifruit']"
+7,images/7.jpg,What Fish has_nutrition protein,salmon,"A kitchen scene with: bean, lime, pot, salmon, chopping_board, shrimp, noodle",,['shrimp']
+8,images/8.jpg,What Vegetable has_shape round,lettuce,"A kitchen scene with: avocado, lettuce, pan, lettuce, pepper, chopping_board, pineapple",,"['onion', 'tomato']"
+9,images/9.jpg,What Fruit has_child_food green_apple,apple,"A kitchen scene with: chopping_board, pot, rice, fillet, apple, ginger, red_apple",,[]
