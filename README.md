@@ -82,7 +82,7 @@ Output: `qa_dataset.csv`
 Connects to a local LLM (e.g., via LM Studio or Ollama using an OpenAI-compatible API) to convert raw, logical questions into natural language.
 
 ### Features:
-- **Inputs:** Accepts either a `.txt` file (one question per line) or a `.csv` file (must contain a `question` column).
+- **Inputs:** Accepts a `.csv` file(must contain a `question` column).
 - **Processing:** Prompts the local LLM to rewrite logical strings (e.g. `What Vegetable has_taste woody`) into normal human-readable English.
 - **Outputs:** If a `.csv` is provided, it safely replaces ONLY the `question` column with the LLM's output and saves a new copy of the dataset.
 
