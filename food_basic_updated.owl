@@ -224,6 +224,10 @@
   <rdf:type rdf:resource="#Color"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#brown">
+  <rdf:type rdf:resource="#Color"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#transparent">
   <rdf:type rdf:resource="#Color"/>
 </owl:NamedIndividual>
@@ -780,6 +784,7 @@
 <owl:NamedIndividual rdf:about="#white_wine">
   <rdf:type rdf:resource="#Beverage"/>
   <has_color rdf:resource="#yellow"/>
+    <has_color rdf:resource="#transparent"/>
   <has_shape rdf:resource="#liquid"/>
   <has_taste rdf:resource="#fruity"/>
   <has_taste rdf:resource="#sour"/>
@@ -796,6 +801,7 @@
 <owl:NamedIndividual rdf:about="#beer">
   <rdf:type rdf:resource="#Beverage"/>
   <has_color rdf:resource="#yellow"/>
+   <has_color rdf:resource="#brown"/>
   <has_shape rdf:resource="#liquid"/>
   <has_taste rdf:resource="#bitter"/>
 </owl:NamedIndividual>
@@ -805,6 +811,8 @@
   <has_shape rdf:resource="#liquid"/>
   <has_taste rdf:resource="#grassy"/>
   <has_taste rdf:resource="#bitter"/>
+  <has_color rdf:resource="#yellow"/>
+  <has_color rdf:resource="#brown"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#coffee">
@@ -812,6 +820,7 @@
   <has_shape rdf:resource="#liquid"/>
   <has_taste rdf:resource="#bitter"/>
   <has_taste rdf:resource="#woody"/>
+    <has_color rdf:resource="#brown"/>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#black_pepper">
